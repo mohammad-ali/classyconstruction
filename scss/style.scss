@@ -1,0 +1,209 @@
+$primarycolor: #16766e;
+$darkprimarycolor: #034842;
+$secondarycolor: #c1e7e6;
+$textdarkcolor: #333;
+// import start
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+// import end
+
+// header section start
+
+#header {
+  min-height: 750px;
+  position: relative;
+}
+
+#mainlogo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 100px;
+}
+
+#topMenu {
+  padding-top: 60px;
+  padding-left: 90px;
+}
+
+#topMenu li {
+  display: inline;
+  font-size: 25px;
+  margin: 25px;
+  font-family: "Rubik", sans-serif;
+  color: #535353;
+}
+
+#topMenu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#logotext {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+#building {
+  height: 400px;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+#carousel {
+  position: relative;
+  top: 50px;
+}
+
+#logotext {
+  font-family: "Open Sans", sans-serif;
+}
+
+#prev {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 30px;
+}
+
+#next {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 30px;
+}
+
+.relative {
+  position: relative !important;
+}
+
+#message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $primarycolor !important;
+}
+
+#underhelp {
+  display: inline;
+  padding: 30px;
+  position: relative;
+  top: 50px;
+}
+
+#c1 {
+  position: relative;
+  animation: hideshow 1s 100ms infinite alternate-reverse ease-in-out;
+}
+
+#c2 {
+  position: absolute;
+  top: 26px;
+  right: 34px;
+  animation: hideshow 2s 200ms infinite alternate-reverse ease-in-out;
+}
+
+#c3 {
+  position: absolute;
+  top: 50px;
+  right: 34px;
+  animation: hideshow 3s 300ms infinite alternate-reverse ease-in-out;
+}
+
+@keyframes hideshow {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// header section end
+
+// ourServices start
+#ourServices {
+  padding-top: 100px;
+  min-height: 700px;
+}
+
+.servicetitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  border-bottom: 3px solid $darkprimarycolor;
+  color: $primarycolor;
+  padding-bottom: 10px;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.servicep {
+  font-size: 22px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+#serivelist {
+  background: $secondarycolor;
+  min-height: 400px;
+  position: relative;
+  bottom: 105px;
+}
+
+#servicecurve {
+  position: relative;
+  bottom: 100px;
+  margin-bottom: 0 !important;
+}
+
+.servicebox {
+  padding: 30px !important;
+}
+
+.sbox {
+  min-height: 200px;
+  text-align: center;
+}
+
+.sbox img {
+  width: 80%;
+  border-radius: 30px;
+}
+
+.sbox h3 {
+  font-size: 20px;
+  margin-top: 10px !important;
+  font-weight: bolder;
+  border-bottom: 3px solid $darkprimarycolor;
+  margin-right: 35px;
+  margin-left: 35px;
+  padding-bottom: 10px;
+}
+
+.sbox p {
+  padding: 10px 40px;
+  text-align: justify;
+  color: $textdarkcolor;
+}
+// ourServices end
+
+// materialize override start
+.carousel .carousel-item {
+  width: 310px !important;
+}
+
+.carousel .carousel-item > img {
+  border-radius: 100% !important;
+}
+
+.carousel {
+  height: 425px !important;
+}
+// materialize override end
